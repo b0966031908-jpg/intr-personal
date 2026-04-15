@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>求職履歷</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/resume.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="resume-page">
+
+  <!-- ===== 導覽列 ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">你的名字</a>
+      <ul class="nav-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="index.html#about">何倫碼</a></li>
+        <li><a href="index.html#skills">UCAN</a></li>
+        <li><a href="#" class="nav-cta" onclick="window.print();return false;">列印履歷</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== 手機選單 ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-link">首頁</a>
+    <a href="index.html#about" class="mobile-link">何倫碼</a>
+    <a href="index.html#skills" class="mobile-link">UCAN</a>
+    <a href="#" class="mobile-link" onclick="window.print();return false;">列印履歷</a>
+  </div>
+
+  <!-- ===== 履歷主體 ===== -->
+  <main class="resume-main">
+    <div class="resume-container">
+
+      <!-- 左側邊欄 -->
+      <aside class="resume-sidebar">
+
+        <!-- 頭貼 -->
+        <div class="sidebar-avatar">
+          <img src="images/avatar.jpg" alt="頭貼" onerror="this.style.display='none'" />
+          <div class="avatar-placeholder-sm"></div>
+        </div>
+
+        <!-- 聯絡資訊 -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">基本資訊</h3>
+          <ul class="contact-list">
+            <!-- ✏️ 替換 -->
+             <li>
+              姓名 : 楊承智
+            </li>
+            <li>
+              性別 : 男性
+            </li>
+            <li>
+              生日 : 2006 / 03 / 17
+            </li>
+            <li>
+              就讀 :<br>靜宜大學 資訊管理學系
+            </li>
+            <li>
+              電子郵件 :<br>b0966031908@gmail.com
+            </li>
+            <li>
+              手機號碼 :<br>0966-031-908
+            </li>
+            <li>
+              住址 :<br>彰化縣-溪湖鎮中山里銀錠路762號
+            </li>
+          </ul>
+        </div>
+
+        <!-- 技能 -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">專業技能</h3>
+          <div class="skill-bars">
+            <!-- ✏️ 替換：技能與熟練度 (0-100) -->
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>網頁前端程式設計</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>JAVA程式語言</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>資料庫管理</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>PYTHON程式語言</span>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 語言能力 -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">語言能力</h3>
+          <ul class="lang-list">
+            <!-- ✏️ 替換 -->
+            <li><span>中文</span><span class="lang-level native">母語</span></li>
+            <li><span>英文</span><span class="lang-level good">流利</span></li>
+          </ul>
+        </div>
+
+        <!-- 興趣 -->
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">興趣愛好</h3>
+          <div class="tags">
+            <!-- ✏️ 替換 -->
+            <span class="tag">看電影</span>
+            <span class="tag">吃吃吃</span>
+            <span class="tag">學習程式語言</span>
+            <span class="tag">打羽球</span>
+            <span class="tag">料理</span>
+            <span class="tag">聽音樂</span>
+            <span class="tag">閱讀心理向書籍</span>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- 右側主要內容 -->
+      <div class="resume-body">
+
+        <!-- 標題區 -->
+        <header class="resume-header reveal">
+          <h1 class="resume-name">
+            <!-- ✏️ 替換 -->
+            楊承智
+          </h1>
+        </header>
+
+        <!-- 自傳 -->
+        <section class="resume-section reveal">
+          <h2 class="resume-section-title">
+            <span class="section-dot"></span>自傳
+          </h2>
+          <div class="autobiography">
+            <!-- ✏️ 替換：自傳內容，可多段 -->
+            <p>
+              我對程式設計與技術實作具有高度興趣，並具備務實動手解決問題的特質。透過課程與自主學習，我培養了基礎程式開發能力，能使用程式語言完成小型專案並進行除錯與優化。同時，我也重視團隊合作與需求溝通，希望透過軟體開發解決實際問題並提升使用者體驗，因此期望應徵程式設計相關職位，持續精進技術能力並累積開發經驗。
+            </p>
+            <p>
+              我目前就讀大二，求職方向為程式設計師。過去在學期間除培養程式設計能力外，也累積了團隊合作與專案規劃經驗，使我具備從需求討論到系統實作的基礎能力，與貴公司程式設計師職務內容高度相符。我曾擔任領頭羊角色，負責活動設計、會議討論與隊伍帶領，過程中需要整合成員意見、規劃執行流程並確保任務順利推進，這培養了我需求分析與專案協作能力，能在開發HR、ERP、MES或APP系統時，與團隊溝通並理解使用者需求，協助系統功能規劃與改善。
+            </p>
+            <p>
+              此外，我選修APP開發課程，使用Android Studio開發能協助瑪麗亞基金會的應用軟體，從功能構想、介面設計到程式撰寫與測試皆親自參與，並透過正式評審評分後於小組中獲得第三名。此專案經驗讓我熟悉應用程式開發流程，包含功能設計、除錯測試與系統優化，與貴公司工作內容中的系統開發、測試及上線後維護相呼應。同時，在開發過程中，我也學習到如何依需求調整功能並改善使用體驗，培養持續更新與維護系統的觀念。
+            </p>
+            <p>
+              綜合上述經驗，我具備程式設計基礎、專案實作經驗與團隊溝通能力，能參與系統開發、功能測試與後續維護工作，並逐步提升至系統架構規劃層面。因此，我相信自己具備發展為程式設計師的潛力，並能為公司系統開發與優化貢獻心力。
+            </p>
+          </div>
+        </section>
+        
+        <!-- 學歷 -->
+        <section class="resume-section reveal">
+          <h2 class="resume-section-title">
+            <span class="section-dot"></span>求職方向 : 
+            <u>
+              <a href="https://www.104.com.tw/job/7bdqd?jobsource=joblist_search" class = "enterprise">
+              程式設計師</a>
+            </u>
+          </h2>
+          <h2 class="resume-section-title">
+            <span class="section-dot"></span>公司 :
+            <u>
+              <a href="https://www.findcompany.com.tw/%E9%82%91%E7%88%8D%E8%B3%87%E8%A8%8A%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class = "enterprise">
+                邑爍資訊有限公司</a>
+            </u>
+          </h2>
+          <h2 class="resume-section-title">
+            <span class="section-dot"></span>工作內容 : 
+          </h2>
+          <div class="timeline">
+            <p>
+              1.從事HR、ERP、MES及其APP之系統軟體與程式之撰寫、開發及測試<br>
+              2.系統上線之維護與功能更新<br>
+              3.平台系統架構規劃及設計
+            </p>
+          </div>
+        </section>
+
+        <!-- 證照 / 獎項 -->
+        <section class="resume-section reveal">
+          <h2 class="resume-section-title">
+            <span class="section-dot"></span>證照 / 獎項
+          </h2>
+          <ul class="cert-list">
+            <!-- ✏️ 替換 -->
+            <li>
+              <span class="cert-name">快要有了!!!</span>
+              <span class="cert-date">2026</span>
+            </li>
+            <li>
+              <span class="cert-name">有更多進步空間~</span>
+              <span class="cert-date">2026</span>
+            </li>
+            <li>
+              <span class="cert-name">未來可期!</span>
+              <span class="cert-date">2026</span>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== 頁尾 ===== -->
+  <footer class="footer no-print">
+    <div class="container">
+      <a href="index.html"><p>© 2026 CHENG-CHIH-YANG · 回到首頁</p></a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

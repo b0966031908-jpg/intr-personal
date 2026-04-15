@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人網站</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== 導覽列 ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">首頁</a>
+      <ul class="nav-links">
+        <li><a href="#about">何倫碼</a></li>
+        <li><a href="#skills">UCAN</a></li>
+        <li><a href="resume.html" class="nav-cta">查看履歷</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== 手機選單 ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">何倫碼</a>
+    <a href="#skills" class="mobile-link">UCAN</a>
+    <a href="resume.html" class="mobile-link">查看履歷</a>
+  </div>
+
+  <!-- ===== 英雄區 ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-in">Hi, 我是</p>
+      <h1 class="hero-name fade-in delay-1">
+        <!-- ✏️ 替換：你的名字 -->
+        楊承智
+      </h1>
+      <p class="hero-title fade-in delay-2" id="typewriter"></p>
+      <p class="hero-desc fade-in delay-3">
+        <!-- ✏️ 替換：一句話描述自己 -->
+        不只想著要做到那些事，更想著要成為哪種人。
+      </p>
+      <div class="hero-actions fade-in delay-4">
+        <a href="#about" class="btn btn-primary">認識我</a>
+        <a href="resume.html" class="btn btn-outline">查看履歷</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap fade-in delay-2">
+      <!-- ✏️ 替換：頭貼圖片路徑 -->
+      <div class="hero-avatar">
+        <img src="images/avatar.jpg" alt="頭貼" onerror="this.style.display='none'" />
+        <div class="avatar-placeholder"><br></div>
+      </div>
+      <div class="hero-deco deco-1"></div>
+      <div class="hero-deco deco-2"></div>
+    </div>
+  </section>
+
+  <!-- ===== 關於我 ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">Holland Code</div>
+      <h2 class="section-title">何倫碼測驗結果</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <!-- ✏️ 替換：關於我段落 -->
+          <p>
+            從我的何倫碼結果「R實作 × S社會」來看，我適合程式設計師有明確理由。
+          </p>
+          <h2>R實作型</h2>
+          <p>
+            代表我偏好動手解決問題、操作工具並處理具體任務，而程式設計本質就是以程式語言作為工具，將抽象需求轉換為可運作的系統，這與我務實、重視效率與技術導向的特質高度一致。
+          </p>
+          <h2>S社會型</h2>
+          <p>
+            代表我具備耐心與協助他人的傾向，這在現代軟體開發中十分重要，因為程式設計師需要與使用者及團隊溝通需求，並透過技術改善他人的工作與生活。我能結合技術實作與同理需求，不只會寫程式，也能開發出真正解決問題的系統，因此特別適合朝程式設計或軟體開發方向發展。
+          </p>
+        </div>
+        <div class="about-image reveal delay-1">
+          <!-- ✏️ 替換：第二張圖 -->
+          <img src="images/about.jpg" alt="關於我的照片" onerror="this.parentElement.style.background='var(--accent-light)'" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Holland Code ===== -->
+    <section class="holland-intro section" id="holland">
+    <div class="container">
+      <div class="section-label">UCAN</div>
+      <h2 class="section-title">UCAN網站測試結果</h2>
+      <div class="holland-cards-grid">
+ 
+        <div class="holland-type-card reveal" style="--card-color:pink">
+          <div class="htc-letter">R</div>
+          <div class="htc-body"><h3>實作型</h3><p>Realistic</p><br>
+                <h5>簡介 :</h5>
+                <p>實用型的人是典型的實作者(Doer)，性格特徵為情緒穩定、坦誠直率、獨立實際、謙虛有禮、穩健節儉。</p>
+                <h5>職業性格傾向 :</h5>
+                <p>在職業性格傾向上，喜歡講求實際、動手操作、按部就班完成實際用途物品等技術性、體力性的工作，例如操作機械、工具、運動設備或養育動物等工作，寧願實際動手作而不喜歡多言，比較喜歡獨立做事，避免主觀性、學術性、富想像力或人際互動的工作類型。</p>
+                <h5>價值觀 :</h5>
+                <p>實用型的人的價值觀是重視傳統的，將雄心與自我控制視為重要的價值觀，講求實事求是而非寬容的態度，形成較封閉的價值觀系統。</p>
+                <h5>問題解決策略 :</h5>
+                <p>在問題解決策略上，偏好於具體、實際和有架構的解決方案或策略，而非學術性、富想像力或人際互動的行動。</p>
+                <h5>典型職業 :</h5>
+                <p>實用型適合從事技術性、體力性之典型職業例如：機械維護師、電器工程人員、太空人、塔台工程師、飛行員、廚師、工匠、農業工作、汽車修護員、警察、消防員等。</p>
+            </div>
+        </div>
+        <div class="holland-type-card reveal delay-1" style="--card-color:#3a7a6a">
+          <div class="htc-letter">I</div>
+          <div class="htc-body"><h3>研究型</h3><p>Investigative</p><br>
+                <h5>簡介 :</h5>
+                <p>研究型的人是典型的“思辨者”(Thinker)，性格特徵為好奇分析、謹慎條理、理性獨立、謙遜、精確、批判。</p>
+                <h5>職業性格傾向 :</h5>
+                <p>在職業性格傾向上，喜歡運用頭腦，善於觀察、思考、分析與推理，依自己的步調追根究底、解決問題，不喜歡他人給予指引，做事時能夠提出新的想法與策略，但對實際解決問題的細節較無興趣，喜歡與符號、概念、文字有關的工作，不必與人有太多的接觸或運用體力的工作類型。</p>
+                <h5>價值觀 :</h5>
+                <p>研究型的人的價值觀是自由不守舊的，對嶄新見解和經驗持開放態度，且擁有廣泛的興趣，不是很在乎別人看法，喜歡和有相同興趣或專業的人討論，否則還不如自己看書思考。</p>
+                <h5>問題解決策略 :</h5>
+                <p>在問題解決策略上，會尋找具挑戰性的問題，仰賴於思考、蒐集資訊和細心分析，以得到與學術性事務相關的客觀資料；較少留心個人感受或社會環境。</p>
+                <h5>典型職業 :</h5>
+                <p>研究型適合從事需要數理及科學能力，而較不需要人際領導能力的工作，其典型職業為：工程師、化學家、數學家、物理學家、地質學家、醫學家、心理學家、營養師、獸醫、藥劑師等。</p>
+            </div>
+        </div>
+        <div class="holland-type-card reveal delay-2" style="--card-color:#7a6aa0">
+          <div class="htc-letter">C</div>
+          <div class="htc-body"><h3>事務型</h3><p>Conventional</p><br>
+            <h5>簡介 :</h5>
+            <p>事務型的人是典型的“文書者”(Organizer)，性格特徵為：規律、精確、有條理、堅毅、謹慎、有效率、穩重、愛整潔、講求實際、保守、服從指示。</p>
+            <h5>職業性格傾向 :</h5>
+            <p>在職業性格傾向上，事務型的人個性謹慎，做事講求規矩與精確，樂於處理資料、計算及文書，喜歡在具有明確規範的環境下工作，能夠按部就班、有效率、精確仔細地完成主管交辦的工作。</p>
+            <h5>價值觀 :</h5>
+            <p>事務型的人的價值觀是較傳統的，會選擇社會所認同的工作及價值觀行事，生活觀是講求踏實與實際，不喜歡改變或創新，也不喜歡冒險或領導。</p>
+            <h5>問題解決策略 :</h5>
+            <p>在問題解決策略上，會選擇跟隨既定的法則、常規和程序行事，仰仗權威的建議和諮詢、尋求實用的解決方案，能夠制定有次序且仔細的計畫解決問題。</p>
+            <h5>典型職業 :</h5>
+            <p>事務型的人喜歡從事規律與有條理的工作，其典型職業為：會計師、精算師、銀行人員、行政人員、出納、速記人員、簿記人員、場記、電腦系統分析師、資產管理專員等。</p>
+          </div>
+        </div>
+ 
+      </div>
+      <p class="holland-note reveal">若以職業性格碼來描述我的職業性格，事務型的特質是個性謹慎、做事講求規矩與精確，樂於處理資料、計算及文書，喜歡在具有明確規範的環境下工作；研究型的特質是喜歡運用頭腦，善於觀察、思考、分析與推理，喜歡與符號、概念、文字有關的工作；實用型的特質是喜歡講求實際，動手操作、按部就班完成實際用途物品等技術性、體力性的工作。</p>
+    </div>
+  </section>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="" />
+      <div class="lightbox-info">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 頁尾 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 楊承智 · 用心設計，感謝瀏覽</p>
+      <div class="footer-links">
+        <!-- ✏️ 替換：社群連結 -->
+        <a href="https://github.com/b0966031908-jpg">GitHub</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnZFTJbJGhKsVNqVQMJvzmFrcjBDwnPVNCnmwVGpSKmHSqRcQGVpSHmFmhcQlKcCMFxDkg">G-mail</a>
+        <a href="https://www.instagram.com/change.0317/">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

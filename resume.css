@@ -1,0 +1,306 @@
+/* =============================================
+   resume.css — 履歷頁專用樣式
+   搭配 style.css 使用
+============================================= */
+
+/* ===== 履歷主體版型 ===== */
+.resume-page {
+  background: var(--bg);
+}
+.resume-main {
+  padding-top: calc(var(--nav-h) + 3rem);
+  padding-bottom: 5rem;
+}
+.resume-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  width: min(1100px, 94%);
+  margin-inline: auto;
+  align-items: start;
+}
+
+/* ===== 左側邊欄 ===== */
+.resume-sidebar {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+  background: var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* 頭貼 */
+.sidebar-avatar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin-inline: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.08);
+}
+.sidebar-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.avatar-placeholder-sm {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* 側欄小標題 */
+.sidebar-title {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 聯絡清單 */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.78);
+  word-break: break-all;
+}
+.contact-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* 技能條 */
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.skill-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.skill-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+}
+.skill-bar-track {
+  height: 5px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent-gold);
+  border-radius: 100px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 語言 */
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.lang-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.78);
+}
+.lang-level {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  font-weight: 500;
+}
+.lang-level.native {
+  background: var(--accent-gold);
+  color: #fff;
+}
+.lang-level.good {
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+}
+
+/* 標籤 */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tag {
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.82);
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ===== 右側主要內容 ===== */
+.resume-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* 標題區 */
+.resume-header {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 2rem;
+}
+.resume-name {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+/* 段落標題 */
+.resume-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-title);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+.section-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+/* 自傳 */
+.autobiography p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.85;
+}
+
+.timeline p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.85;
+}
+/* 公司介紹連結 */
+.enterprise:hover {
+  color: brown;
+  text-decoration: none;
+  
+}
+/* 證照清單 */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.cert-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.cert-list li:last-child { border-bottom: none; }
+.cert-name { color: var(--text); }
+.cert-date {
+  color: var(--accent-gold);
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+/* ===== RWD ===== */
+@media (max-width: 860px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+  .resume-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .sidebar-avatar {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 600px) {
+  .resume-sidebar {
+    grid-template-columns: 1fr;
+  }
+  .timeline-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== 列印樣式 ===== */
+@media print {
+  .navbar,
+  .mobile-menu,
+  .footer.no-print {
+    display: none !important;
+  }
+  .resume-main {
+    padding-top: 0;
+  }
+  .resume-container {
+    grid-template-columns: 220px 1fr;
+    gap: 1.5rem;
+  }
+  .resume-sidebar {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    background: #1a3329 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .project-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
